@@ -61,6 +61,13 @@ for (let result of shows){
         details.append(p4);
         details.append(p5);
         details.append(p6);
+        const btn = document.createElement('button');
+        btn.innerText = 'clear!';
+        btn.setAttribute('class', 'btn btn-primary')
+        btn.addEventListener('click', function(){
+            newshow.remove();
+        });
+        form.append(btn);
         
         document.body.childNodes[1].childNodes[5].append(newshow);
                  
