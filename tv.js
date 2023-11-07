@@ -13,7 +13,7 @@ form.addEventListener('submit', async function(e){
 }); 
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', function(){
-            newshow.innerText = '';
+            document.body.childNodes[1].childNodes[5] = '';
         });
 
 
