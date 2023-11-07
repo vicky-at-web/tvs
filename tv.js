@@ -10,7 +10,11 @@ form.addEventListener('submit', async function(e){
     makeImages(res.data);
     form.elements.search.value = "";
     
-});
+}); 
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', function(){
+            newshow.innerText = '';
+        });
 
 
 
@@ -64,9 +68,7 @@ for (let result of shows){
         const btn = document.createElement('button');
         btn.innerText = 'clear!';
         btn.setAttribute('class', 'btn btn-primary')
-        btn.addEventListener('click', function(){
-            newshow.remove();
-        });
+        
         form.append(btn);
         
         document.body.childNodes[1].childNodes[5].append(newshow);
