@@ -44,6 +44,7 @@ for (let result of shows){
         // p6.innerText = `Available on: ${avl}`
         const newshow = document.createElement('div');
         const details = document.createElement('div');
+        details.setAttribute('class','container-fluid')
         newshow.setAttribute('class', 'container-fluid mt-3');
         newshow.setAttribute('id', 'newshow')
         newshow.append(img);
